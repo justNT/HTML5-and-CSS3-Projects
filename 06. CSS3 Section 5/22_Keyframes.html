@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        body{
+            background: #333;
+        }
+
+        .box{
+        width: 200px;
+        height: 200px;
+        background: white;
+        position: relative;
+        /* animation: animation-1;
+        animation-duration: 5s;
+        animation-iteration-count: 3;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out; */
+        animation: animation-1 5s 3 forwards alternate-reverse ease-in-out;
+        }
+     
+        @keyframes animation-1{
+            from{
+                top: 0;
+            }
+            to{
+                top: 300px;
+                width: 600px;
+                background-color: tomato;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        :root{
+            --max-width:900px;
+            --primary-color: steelblue;
+            --secondary-color: skyblue; 
+            --light-color: #f4f4f4;
+            
+
+        }
+
+        .box{
+            --box1-width:2;
+            --box2-width:1;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            background-color: var(--light-color);
+        }
+
+        .container{
+            display: flex;
+            margin: auto;
+            max-width: var(--max-width);
+        }
+
+        header{
+            background-color: var(--primary-color);
+            border-bottom: 5px solid var(--secondary-color);
+            text-align: center;
+        }
+
+        .box{
+            background-color: var(--primary-color);
+            border: 5px solid var(--secondary-color);
+            margin: 1rem;
+            padding: 1rem;
+            color: #fff;
+            
+        }
+
+        .box-1{ flex:var(--box1-width);}
+        .box-2{ flex:var(--box2-width); }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Variables</h1>
+    </header>
+
+    <div class="container">
+        <div class="box box-1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci distinctio at perspiciatis qui recusandae porro eum, quaerat, nesciunt, eos ut inventore harum alias quidem illum! Expedita quas hic quisquam minima.</p>
+        </div>
+        <div class="box box-2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci distinctio at perspiciatis qui recusandae porro eum, quaerat, nesciunt, eos ut inventore harum alias quidem illum! Expedita quas hic quisquam minima.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

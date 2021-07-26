@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basics</title>
+    <style>
+        .box{
+            text-align: center;
+            background: #f4f4f3;
+            border: blue 1px solid;
+            padding:0.5rem 1rem;
+            flex: 1;
+        }
+
+        .box:first-child{
+            flex:2z;
+        }
+
+        #container{
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            flex-flow:row wrap;
+
+            /* 
+                OPTIONS 
+
+                row
+                column
+                row-reverse
+
+            */
+
+            /* 
+            
+                OPTIONS 
+
+                wrap
+                no-wrap
+                wrap-reverse
+
+             */
+
+        }
+                
+    </style>
+</head>
+<body>
+    <div id ="container">
+        <div class="box">item 1</div>
+        <div class="box">item 2</div>
+        <div class="box">item 3</div>
+        <!-- <div class="box">item 4</div>
+        <div class="box">item 5</div>
+        <div class="box">item 6</div>
+        <div class="box">item 7</div>
+        <div class="box">item 8</div>
+        <div class="box">item 9</div>
+        <div class="box">item 10</div>
+        <div class="box">item 11</div>
+        <div class="box">item 12</div>
+        <div class="box">item 13</div>
+        <div class="box">item 14</div>
+        <div class="box">item 15</div> -->
+    </div>
+
+</body>
+</html>

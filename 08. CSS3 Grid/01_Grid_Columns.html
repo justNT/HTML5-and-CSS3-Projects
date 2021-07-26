@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Column</title>
+    <style>
+        .item{
+            background: #ccc;
+            border: #444 1px solid;
+            padding: 3rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .grid{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: 200px auto 200px; */
+            /* grid-template-columns: repeat(3, 200px); */
+            /* grid-template-columns: repeat(3, auto); */
+            grid-template-columns:1fr 2fr 3fr;
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-gap: 1rem;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 1rem;
+        }
+
+        section,
+        aside{
+            border: #444 1px solid;
+        }
+
+        section h1,
+        aside h1{
+            text-align: center;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <main>
+        <section>
+            <h1>Welcome to the website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur rerum molestias voluptate doloremque architecto at quaerat ad animi expedita amet.</p>
+        </section>
+        <aside>
+            <h1>Aside section</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, cupiditate! Tempore tempora iusto temporibus sequi deleniti itaque ipsam facilis laudantium.</p>
+        </aside>
+    </main>
+
+</body>
+</html>
